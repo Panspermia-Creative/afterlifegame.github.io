@@ -15,18 +15,6 @@ body {
     font-size: 16px;
 }
 
-/* Portada Principal */
-#cover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url('/img/Screenshot_71_v3.png') no-repeat center center/cover;
-    /* Imagen de fondo */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
 
 /* Animación flotante para el logo */
 @keyframes float {
@@ -336,4 +324,36 @@ p {
 
 button:focus {
     outline: none;
+}
+
+/* Estilo para el video de portada */
+#cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#cover-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#cover-video {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajustes para el contenido sobre el video */
+.cover-content {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
 }
